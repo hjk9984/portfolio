@@ -21,11 +21,6 @@
     /* Size */
 }
 
-/* Universal tags */
-* {
-    box-sizing: border-box;
-}
-
 /* Typography */
 h1 {
     font-size: var(--font-large);
