@@ -1,0 +1,58 @@
+/* Global */
+:root {
+    /* Color */
+    --color-white: #fafafa;
+    --color-light-white: #ffffff;
+
+    --color-black: #1b1b1b;
+    --color-light-black:#424242;
+
+    /* Font size */
+    --font-large: 48px;
+    --font-medium: 28px;
+    --font-regular: 18px;
+    --font-small: 16px;
+    --font-micron: 12px;
+
+    /* Font weight */
+    --weight-bold: 700;
+    --weight-semi-bold: 600px;
+    --weight-regular: 400px;
+    /* Size */
+}
+
+/* Universal tags */
+* {
+    box-sizing: border-box;
+}
+
+/* Typography */
+h1 {
+    font-size: var(--font-large);
+    font-weight: var(--weight-bold);
+    color: var(--color-black);
+    margin: 16px 0px;
+    /* if margin have 4elements, */
+    /* it has clock direction ordering */
+}
+
+h2 {
+    font-size: var(--font-medium);
+    font-weight: var(--weight-semi-bold);
+    color: var(--color-black);
+    margin: 8px 0;
+}
+
+h3 {
+    font-size: var(--font-regular);
+    font-weight: var(--font-regular);
+    color: var(--color-black);
+    margin: 8px 0;
+}
+
+p {
+    font-size: var(--font-regular);
+    font-weight: var(--font-regular);
+    color: var(--color-black);
+    margin: 4px 0;
+}
