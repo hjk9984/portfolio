@@ -1,141 +1,215 @@
 /* Global */
 :root {
-    /* Color */
-    --color-blue: #90caf9;
-    --color-blue-light: #c3fdff;
-    --color-blue-dark: #5d99c6;
-    --color-white: #fafafa;
-    --color-light-white: #ffffff;
-    --color-black: #1b1b1b;
-    --color-light-black:#424242;
+  /* Color */
+  --color-blue: #90caf9;
+  --color-blue-light: #c3fdff;
+  --color-blue-dark: #5d99c6;
+  --color-white: #fafafa;
+  --color-light-white: #ffffff;
+  --color-black: #1b1b1b;
+  --color-light-black: #424242;
 
-    /* Font size */
-    --font-large: 48px;
-    --font-medium: 28px;
-    --font-regular: 18px;
-    --font-small: 16px;
-    --font-micron: 12px;
+  /* Font size */
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-small: 16px;
+  --font-micro: 12px;
 
-    /* Font weight */
-    --weight-bold: 700;
-    --weight-semi-bold: 600px;
-    --weight-regular: 400px;
+  /* Font weight */
+  --weight-bold: 700;
+  --weight-semi-bold: 600px;
+  --weight-regular: 400px;
 
-    /* Size */
-    --size-border-radius: 4px;
+  /* Size */
+  --size-border-radius: 4px;
+
+  /* Animation */
+  --animation-duration: 250ms;
 }
 
 body {
-    font-family: 'Noto Sans KR', sans-serif;
-    margin: 0;
-    cursor: default;
+  font-family: "Noto Sans KR", sans-serif;
+  margin: 0;
+  cursor: default;
 }
 
 a {
-    text-decoration: none;
-    color: var(--color-white);
+  text-decoration: none;
+  color: var(--color-white);
 }
 
 ul {
-    list-style: none;
-    padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 button {
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 /* Typography */
 h1 {
-    font-size: var(--font-large);
-    font-weight: var(--weight-bold);
-    color: var(--color-black);
-    margin: 16px 0px;
-    /* if margin have 4elements, */
-    /* it has clock direction ordering */
+  font-size: var(--font-large);
+  font-weight: var(--weight-bold);
+  color: var(--color-black);
+  margin: 16px 0px;
+  /* if margin have 4elements, */
+  /* it has clock direction ordering */
 }
 
 h2 {
-    font-size: var(--font-medium);
-    font-weight: var(--weight-semi-bold);
-    color: var(--color-black);
-    margin: 8px 0;
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+  color: var(--color-black);
+  margin: 8px 0;
 }
 
 h3 {
-    font-size: var(--font-regular);
-    font-weight: var(--font-regular);
-    color: var(--color-black);
-    margin: 8px 0;
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+  color: var(--color-black);
+  margin: 8px 0;
 }
 
 p {
-    font-size: var(--font-regular);
-    font-weight: var(--font-regular);
-    color: var(--color-black);
-    margin: 4px 0;
+  font-size: var(--font-regular);
+  font-weight: var(--font-regular);
+  color: var(--color-black);
+  margin: 4px 0;
 }
 
 /* Navbar */
 #navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: var(--color-blue);
-    align-items: center;
-    color: var(--color-white);
-    padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-blue);
+  align-items: center;
+  color: var(--color-white);
+  padding: 16px;
 }
 
 .navbar__logo {
-    font-size: var(--font-medium);
-    font-weight: var(--weight-semi-bold);
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
 }
 
 .navbar__menu {
-    display: flex;
+  display: flex;
 }
 
 .navbar__menu__item {
-    padding: 8px 12px;
-    margin: 0 4px;
-    cursor: pointer;
-    border-radius: var(--size-border-radius);
+  padding: 8px 12px;
+  margin: 0 4px;
+  cursor: pointer;
+  border-radius: var(--size-border-radius);
 }
 
 .navbar__menu__item.active {
-    border: 1px solid var(--color-white);
+  border: 1px solid var(--color-white);
 }
 
 .navbar__menu__item:hover {
-    background-color: var(--color-blue-dark);
+  background-color: var(--color-blue-dark);
 }
 
 /* Home */
 #home {
-    background-image: url() center/cover no-repeat;
-    padding: 40px;
-    text-align: center;
+  background-image: url() center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
 }
 
 .home__avatar {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    border: 20px solid var(--color-white);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 20px solid var(--color-white);
 }
 
 .home__contact {
-    font-size:  var(--font-regular);
-    font-weight: var(--weight-semi-bold);
-    margin: 24px;
-    padding: 8px 12px;
-    border: 2px solid var(--color-white);
-    border-radius: var(--size-border-radius);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-semi-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  border-radius: var(--size-border-radius);
+}
+
+/* Section common */
+.section {
+  padding: 50px;
+  text-align: center;
+  max-width: 1200px;
+  /* 보통 1000~1200까지가 데스크톱에서 보기 편함 */
+  margin: auto;
+}
+
+/* About */
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  /* height와 같으면 센터에 위치하게 되나봄 */
+  font-size: 70px;
+  margin: auto;
+  border: 1px solid var(--color-blue);
+  border-radius: 50%;
+  margin-bottom: 16px;
+  color: var(--color-blue-dark);
+}
+
+.major__icon i {
+  transition: all var(--animation-duration) ease;
+  /* duration은 250~300까지가 적당 */
+}
+
+.major__icon:hover i {
+  color: var(--color-blue);
+  transform: scale(1.1);
+}
+
+.major__title,
+.major__description {
+  color: var(--color-light-black);
+}
+
+.major__description {
+  font-size: var(--font-small);
+}
+
+.job {
+  display: flex;
+  align-items: center;
+}
+
+.job__description {
+  margin: 0 16px;
+  text-align: left;
+}
+
+.job__name,
+.job__period {
+  color: var(--color-light-black);
+}
+
+.job__name {
+  font-size: var(--font-small);
+}
+
+.job__period {
+  font-size: var(--font-micro);
 }
