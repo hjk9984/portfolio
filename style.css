@@ -147,7 +147,11 @@ p {
 .section {
   padding: 50px;
   text-align: center;
-  max-width: 1200px;
+  margin: auto;
+}
+
+.section__container {
+  max-width: 1000px;
   /* 보통 1000~1200까지가 데스크톱에서 보기 편함 */
   margin: auto;
 }
@@ -212,4 +216,62 @@ p {
 
 .job__period {
   font-size: var(--font-micro);
+}
+
+/* Skills */
+#skills {
+  background-color: var(--color-blue-light);
+}
+
+.skillset {
+  display: flex;
+  background-color: var(--color-light-black);
+  color: var(--color-blue-light);
+  margin: 20px 0;
+}
+
+.skillset__title {
+  color: var(--color-light-white);
+  /* 이 놈이 주석처리 되면 타이틀이 검은색이 됨 블루 라이트가 아니라 왜그럴까? */
+}
+
+.skillset__left {
+  flex-basis: 60%;
+  background-color: var(--color-blue);
+  padding: 20px 40px;
+  /* 위아래 좌우 */
+}
+
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill {
+  margin-bottom: 16px;
+}
+
+.skill__bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-light-black);
+}
+
+.skill__value {
+  height: 3px;
+  /* width는 인라인 스타일로 되어있음 */
+  background-color: var(--color-blue-light);
+}
+
+.skillset__right {
+  flex-basis: 40%;
+}
+
+.tools {
+  background-color: var(--color-blue-dark);
+}
+
+.tools,
+.etc {
+  padding: 20px;
 }
