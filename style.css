@@ -18,14 +18,18 @@
 
   /* Font weight */
   --weight-bold: 700;
-  --weight-semi-bold: 600px;
-  --weight-regular: 400px;
+  --weight-semi-bold: 600;
+  --weight-regular: 400;
 
   /* Size */
   --size-border-radius: 4px;
 
   /* Animation */
   --animation-duration: 250ms;
+}
+/* Universal tags */
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -118,6 +122,16 @@ p {
 
 .navbar__menu__item:hover {
   background-color: var(--color-blue-dark);
+}
+
+.navbar__toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  font-size: 24px;
+  color: var(--color-white);
+  display: none;
+  /* 여기서 opacity=0으로 하면 보이지는 않지만 클릭이 된다... */
 }
 
 /* Home */
@@ -397,4 +411,34 @@ p {
 .contact__links i:hover {
   transform: scale(1.1);
   transition: all var(--animation-duration) ease-in;
+}
+
+/* for below 768px screen width */
+@media screen and (max-width: 768px) {
+  .navbar__toggle-btn {
+    display: block;
+  }
+
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar__menu {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  .about__majors {
+    flex-direction: column;
+  }
+
+  .major {
+    margin-bottom: 38px;
+  }
+
+  .project {
+    flex-grow: 1;
+  }
 }

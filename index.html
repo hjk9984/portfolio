@@ -27,14 +27,20 @@
             <i class="fas fa-cat"></i>
             <a href="#">Antae</a>
         </div>
-        <ul class="navbar__menu">
-            <li class="navbar__menu__item active">Home</li>
-            <li class="navbar__menu__item">About</li>
-            <li class="navbar__menu__item">Skills</li>
-            <li class="navbar__menu__item">Projects</li>
-            <li class="navbar__menu__item">Contact</li>
-        </ul>
-
+        <div class="navbar__menu">
+            <ul class="navbar__menu">
+                <li class="navbar__menu__item">Home</li>
+                <li class="navbar__menu__item">About</li>
+                <li class="navbar__menu__item">Skills</li>
+                <li class="navbar__menu__item">Projects</li>
+                <li class="navbar__menu__item">Contact</li>
+            </ul>
+        </div>
+    
+        <!-- toggle button -->
+        <button class="navbar__toggle-btn">
+            <i class="fas fa-bars"></i>
+        </button>
     </nav>
 
     <!-- Home -->
@@ -140,21 +146,23 @@
     <!-- Projects -->
     <section id="projects" class="section">
         <h1>My Projects</h1>
-        <div class="work__categories">
-            <button class="category__btn">All <span class="category__count">7</span></button>
-            <button class="category__btn">Deep learning <span class="category__count">6</span> </button>
-            <button class="category__btn">Front-end<span class="category__count">1</span></button>
-            <!-- <button class="category__btn"></button> -->
-        </div>
+        <div class="section__container">
+            <div class="work__categories">
+                <button class="category__btn">All <span class="category__count">7</span></button>
+                <button class="category__btn">Deep learning <span class="category__count">6</span> </button>
+                <button class="category__btn">Front-end<span class="category__count">1</span></button>
+                <!-- <button class="category__btn"></button> -->
+            </div>
 
-        <div class="work__projects">
-            <a href="" class="project" target="blank">
-                <img src="imgs/projects~~" alt="" class="project__img">
-                <div class="project__description">
-                    <h3>aaaa</h3>
-                    <span>PIOU LOSS best award</span>
-                </div>
-            </a>
+            <div class="work__projects">
+                <a href="" class="project" target="blank">
+                    <img src="imgs/projects~~" alt="" class="project__img">
+                    <div class="project__description">
+                        <h3>aaaa</h3>
+                        <span>PIOU LOSS best award</span>
+                    </div>
+                </a>
+            </div>
         </div>
 
     </section>
